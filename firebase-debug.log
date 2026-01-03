@@ -1,0 +1,62 @@
+[debug] [2026-01-03T04:40:20.880Z] ----------------------------------------------------------------------
+[debug] [2026-01-03T04:40:20.882Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prath\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-01-03T04:40:20.882Z] CLI Version:   15.1.0
+[debug] [2026-01-03T04:40:20.882Z] Platform:      win32
+[debug] [2026-01-03T04:40:20.882Z] Node Version:  v24.12.0
+[debug] [2026-01-03T04:40:20.882Z] Time:          Sat Jan 03 2026 10:10:20 GMT+0530 (India Standard Time)
+[debug] [2026-01-03T04:40:20.882Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\prath\OneDrive\Desktop\nehruhackmarathon-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-01-03T04:40:57.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-03T04:40:57.010Z] > authorizing via signed-in user (darshanab375@gmail.com)
+[debug] [2026-01-03T04:40:57.011Z] Checked if tokens are valid: true, expires at: 1767418803928
+[debug] [2026-01-03T04:40:57.011Z] Checked if tokens are valid: true, expires at: 1767418803928
+[debug] [2026-01-03T04:40:57.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-01-03T04:40:57.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-01-03T04:40:57.824Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-01-03T04:41:00.410Z] Checked if tokens are valid: true, expires at: 1767418803928
+[debug] [2026-01-03T04:41:00.410Z] Checked if tokens are valid: true, expires at: 1767418803928
+[debug] [2026-01-03T04:41:00.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hackathon-7fedc [none]
+[debug] [2026-01-03T04:41:00.796Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hackathon-7fedc 200
+[debug] [2026-01-03T04:41:00.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hackathon-7fedc {"projectId":"hackathon-7fedc","projectNumber":"560522658672","displayName":"hackathon-7fedc","name":"projects/hackathon-7fedc","resources":{"hostingSite":"hackathon-7fedc"},"state":"ACTIVE","etag":"1_50881a6b-d262-4928-925f-d8077e12d177"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\prath\OneDrive\Desktop\nehruhackmarathon-main is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=507112199&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-01-03T04:42:26.598Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2026-01-03T04:42:26.598Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2026-01-03T04:42:27.413Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2026-01-03T04:42:27.413Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2026-01-03T04:42:27.415Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2026-01-03T04:42:28.043Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2026-01-03T04:42:28.044Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"darshu-22BF0931","id":144015415,"node_id":"U_kgDOCJWANw","avatar_url":"https://avatars.githubusercontent.com/u/144015415?v=4","gravatar_id":"","url":"https://api.github.com/users/darshu-22BF0931","html_url":"https://github.com/darshu-22BF0931","followers_url":"https://api.github.com/users/darshu-22BF0931/followers","following_url":"https://api.github.com/users/darshu-22BF0931/following{/other_user}","gists_url":"https://api.github.com/users/darshu-22BF0931/gists{/gist_id}","starred_url":"https://api.github.com/users/darshu-22BF0931/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/darshu-22BF0931/subscriptions","organizations_url":"https://api.github.com/users/darshu-22BF0931/orgs","repos_url":"https://api.github.com/users/darshu-22BF0931/repos","events_url":"https://api.github.com/users/darshu-22BF0931/events{/privacy}","received_events_url":"https://api.github.com/users/darshu-22BF0931/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2023-09-04T10:22:00Z","updated_at":"2025-07-09T05:48:24Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":7846,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as darshu-22BF0931 
+[info] 
